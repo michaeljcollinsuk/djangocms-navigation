@@ -11,8 +11,8 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='menucontent',
-            name='is_main_navigation',
-            field=models.BooleanField(default=False),
+            model_name='menu',
+            name='main_navigation',
+            field=models.BooleanField(default=False, verbose_name='Main Navigation'),
         ),
     ]
